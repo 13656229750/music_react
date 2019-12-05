@@ -4,6 +4,7 @@ import {NavLink,Route,Redirect,Switch} from 'react-router-dom'
 import Search from '../search'
 import Recommend from '../recommend'
 import Rank from '../rank'
+
 export default class Home extends React.Component{
     constructor(props){
         super(props)
