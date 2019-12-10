@@ -24,7 +24,7 @@ import {Carousel} from 'antd'
         <div className="banner">
         <Carousel autoplay>
           {this.props.slider && this.props.slider.map((slider,index)=>{
-                return <div key={index}><img src={slider}/></div>
+                return <div key={index}><img src={slider} alt=''/></div>
             })}
         </Carousel>
            
@@ -37,7 +37,7 @@ import {Carousel} from 'antd'
         {this.props.radioList && this.props.radioList.map((radio,index)=>{
             return  <li key={radio.id}>
         <div>
-           <img src={radio.picUrl}/>
+           <img src={radio.picUrl} alt=''/>
         <span className="iconfont icon-bofang"></span>
         </div>
         <h2 className="station_name">{radio.title}</h2>

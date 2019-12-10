@@ -13,9 +13,10 @@ export default(state,action)=>{
 export const getRank=()=>(dispatch)=>{
 //   ajax获取数据
   fetch(TOP_LIST).then((data)=>data.json()).then((res)=>{
-   console.log(res)
+   console.log(res);
     // dispatch将数据回传至仓库
-  dispatch({type:'INIT',data:res.data})
+    setTimeout(()=>{
+      dispatch({type:'INIT',data:res.data})
+    },1000)
   })
-  
 }
